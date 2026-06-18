@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a href="profil.html"><img src="img/profil.svg" alt="кнопка профиля"></a></li>
+                <li class="navigation__list-item"><a href="index.html"><img class="back-img" src="img/back.svg" alt="кнопка назад"></a></li>
+                <li><input class="search_input"></li>
+                <li class="navigation__list-item"><img src="img/search.svg" alt="кнопка поиска"></li>
+                <li class="navigation__list-item button_sun"><img src="img/sun.svg" alt="кнопка смены темы"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_profil">
+        <h1 class="title_name">НашХлеб</h1>
+        <section class="personal_information">
+            <h1 class="personal_information-title">профиль</h1>
+            <p class="personal_information-text">логин:<span class="login"></span></p>
+            <p class="personal_information-text">адрес:<span class="adress"></span></p>
+            <p class="personal_information-text">почта:<span class="email"></span></p>
+        </section>
+        <section class="basket">
+            <h1 class="basket-title">корзина</h1>
+            <div class="basket_products-div"></div>
+            <div class="basket_information">
+                <p><span class="price_basket">0</span> р.</p>
+                <div class="basket_buttons">
+                    <button class="button reset" type="reset">очистить</button>
+                    <button class="button submit" type="submit">готовить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="modal" class="none">
+        <div class="modal_window">
+            <div class="modal-content"></div>
+            <button class="close_modal">закрыть</button>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/tema.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

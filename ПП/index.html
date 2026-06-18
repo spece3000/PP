@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a href="profil.html"><img src="img/profil.svg" alt="кнопка профиля"></a></li>
+                <li class="navigation__list-item"><a href="404.html"><img class="back-img" src="img/back.svg" alt="кнопка назад"></a></li>
+                <li><input class="search_input"></li>
+                <li class="navigation__list-item"><img src="img/search.svg" alt="кнопка поиска"></li>
+                <li class="navigation__list-item button_sun"><img src="img/sun.svg" alt="кнопка смены темы"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <select class="choice_sort">
+            <option value="normal">стандарт</option>
+            <option value="up_price">по возрастанию</option>
+            <option value="down_price">по убыванию</option>
+        </select>
+        <h1 class="title_name">НашХлеб</h1>
+        <div id="custom-timer">
+            <h2>открываемся через:</h2>
+            <span id="days">00</span>д 
+            <span id="hours">00</span>ч 
+            <span id="minutes">00</span>м 
+            <span id="seconds">00</span>с 
+        </div>
+        <section class="choice_filter">
+            <input type="checkbox" name="ferguson" filter="bakery" class="visually-hidden input_shop" id="bakery">
+            <label class="label__filter" for="bakery">
+                <img src="./img/bread.png" alt="свежий хлеб">
+                <p>выпечка</p>
+            </label>
+            <input type="checkbox" name="ferguson" filter="sweets" class="visually-hidden input_shop" id="sweets">
+            <label class="label__filter" for="sweets">
+                <img src="./img/keks.png" alt="2 шоколадных мафина">
+                <p>сладости</p>
+            </label>
+            <input type="checkbox" name="ferguson" filter="pies" class="visually-hidden input_shop" id="pies">
+            <label class="label__filter" for="pies">
+                <img src="./img/pirog.png" alt="вишнёвый пирог">
+                <p>пироги</p>
+            </label>
+        </section>
+        <section class="shop_sec">
+            <div class="shop">
+            <div class="product" filt="pies" price="550">
+                <div></div>
+                <p class="title_product">бабушкин пирог из яблок</p>
+                <div></div>
+                <p class="price_product">550 р.</p>
+                <img class="img_product" src="./img/pirog1.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="60">
+                <div></div>
+                <p class="title_product">маффин с шоколадом</p>
+                <div></div>
+                <p class="price_product">60 р.</p>
+                <img class="img_product" src="./img/maffin.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="50">
+                <div></div>
+                <p class="title_product">булочка с изюмом</p>
+                <div></div>
+                <p class="price_product">50 р.</p>
+                <img class="img_product" src="./img/blka.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="30">
+                <div></div>
+                <p class="title_product">белый хлеб</p>
+                <div></div>
+                <p class="price_product">30 р.</p>
+                <img class="img_product" src="./img/bread.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="pies" price="500">
+                <div></div>
+                <p class="title_product">штрудель</p>
+                <div></div>
+                <p class="price_product">500 р.</p>
+                <img class="img_product" src="./img/pirog2.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="600">
+                <div></div>
+                <p class="title_product">торт "дон панчо"</p>
+                <div></div>
+                <p class="price_product">600 р.</p>
+                <img class="img_product" src="./img/tort.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="100">
+                <div></div>
+                <p class="title_product">круассан с шоколадом</p>
+                <div></div>
+                <p class="price_product">100 р.</p>
+                <img class="img_product" src="./img/kruassan.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="80">
+                <div></div>
+                <p class="title_product">корзинка ветчина сыр</p>
+                <div></div>
+                <p class="price_product">80 р.</p>
+                <img class="img_product" src="./img/korzina.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="pies" price="550">
+                <div></div>
+                <p class="title_product">бабушкин пирог из яблок</p>
+                <div></div>
+                <p class="price_product">550 р.</p>
+                <img class="img_product" src="./img/pirog1.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="60">
+                <div></div>
+                <p class="title_product">маффин с шоколадом</p>
+                <div></div>
+                <p class="price_product">60 р.</p>
+                <img class="img_product" src="./img/maffin.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="50">
+                <div></div>
+                <p class="title_product">булочка с изюмом</p>
+                <div></div>
+                <p class="price_product">50 р.</p>
+                <img class="img_product" src="./img/blka.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="30">
+                <div></div>
+                <p class="title_product">белый хлеб</p>
+                <div></div>
+                <p class="price_product">30 р.</p>
+                <img class="img_product" src="./img/bread.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="pies" price="500">
+                <div></div>
+                <p class="title_product">штрудель</p>
+                <div></div>
+                <p class="price_product">500 р.</p>
+                <img class="img_product" src="./img/pirog2.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="600">
+                <div></div>
+                <p class="title_product">торт "дон панчо"</p>
+                <div></div>
+                <p class="price_product">600 р.</p>
+                <img class="img_product" src="./img/tort.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="100">
+                <div></div>
+                <p class="title_product">круассан с шоколадом</p>
+                <div></div>
+                <p class="price_product">100 р.</p>
+                <img class="img_product" src="./img/kruassan.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="80">
+                <div></div>
+                <p class="title_product">корзинка ветчина сыр</p>
+                <div></div>
+                <p class="price_product">80 р.</p>
+                <img class="img_product" src="./img/korzina.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="pies" price="550">
+                <div></div>
+                <p class="title_product">бабушкин пирог из яблок</p>
+                <div></div>
+                <p class="price_product">550 р.</p>
+                <img class="img_product" src="./img/pirog1.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="60">
+                <div></div>
+                <p class="title_product">маффин с шоколадом</p>
+                <div></div>
+                <p class="price_product">60 р.</p>
+                <img class="img_product" src="./img/maffin.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="50">
+                <div></div>
+                <p class="title_product">булочка с изюмом</p>
+                <div></div>
+                <p class="price_product">50 р.</p>
+                <img class="img_product" src="./img/blka.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="30">
+                <div></div>
+                <p class="title_product">белый хлеб</p>
+                <div></div>
+                <p class="price_product">30 р.</p>
+                <img class="img_product" src="./img/bread.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="pies" price="500">
+                <div></div>
+                <p class="title_product">штрудель</p>
+                <div></div>
+                <p class="price_product">500 р.</p>
+                <img class="img_product" src="./img/pirog2.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="600">
+                <div></div>
+                <p class="title_product">торт "дон панчо"</p>
+                <div></div>
+                <p class="price_product">600 р.</p>
+                <img class="img_product" src="./img/tort.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="sweets" price="100">
+                <div></div>
+                <p class="title_product">круассан с шоколадом</p>
+                <div></div>
+                <p class="price_product">100 р.</p>
+                <img class="img_product" src="./img/kruassan.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            <div class="product" filt="bakery" price="80">
+                <div></div>
+                <p class="title_product">корзинка ветчина сыр</p>
+                <div></div>
+                <p class="price_product">80 р.</p>
+                <img class="img_product" src="./img/korzina.png" alt="аппетитная корзинка с ветчиной и сыром">
+                <img class="icon_basket" src="./img/basket.svg" alt="кнопка корзины">
+            </div>
+            </div>
+        </section>
+        <section class="numbers">
+            <ul class="numbers_list">
+                <li><input type="radio" class="visually-hidden" name="num" id="one" value="one" checked><label for="one" class="numbers_list-item"><p>1</p></label></li>
+                <li><input type="radio" class="visually-hidden" name="num" id="two" value="two"><label for="two" class="numbers_list-item"><p>2</p></label></li>
+                <li><input type="radio" class="visually-hidden" name="num" id="three" value="three"><label for="three" class="numbers_list-item"><p>3</p></label></li>
+            </ul>
+        </section>
+    </main>
+    <div id="modal" class="none">
+        <div class="modal_window">
+            <div class="modal-content"></div>
+            <button class="close_modal">закрыть</button>
+        </div>
+    </div>
+    <script src="js/timer_days.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/tema.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/pagination.js"></script>
+</body>
+</html>
