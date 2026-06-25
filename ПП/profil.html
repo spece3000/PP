@@ -44,9 +44,30 @@
             <button class="close_modal">закрыть</button>
         </div>
     </div>
+    <!-- Модалка "Вы здесь?" -->
+    <div id="modal-inactivity" class="none">
+        <div class="modal_window">
+            <div class="modal-content">
+                <p class="modal-title">Вы здесь?</p>
+            </div>
+            <button class="modal-btn" id="inactivity-yes">Да</button>
+        </div>
+    </div>
+
+    <!-- Модалка "Нет интернета" -->
+    <div id="modal-offline" class="none">
+        <div class="modal_window">
+            <div class="modal-content">
+                <p class="modal-title">Нет интернета</p>
+                <p class="modal-text">Проверьте подключение к сети</p>
+            </div>
+            <button class="modal-btn" id="offline-retry">Да</button>
+        </div>
+    </div>
     <script src="js/auth.js"></script>
     <script src="js/tema.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/inactivity.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/profile.js"></script>
 </body>

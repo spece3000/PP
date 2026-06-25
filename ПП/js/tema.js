@@ -21,7 +21,7 @@ function applyTheme(theme) {
     timer?.classList.toggle('text_dark', isBlack);
     pers_sect?.classList.toggle('personal_information_dark', isBlack);
     basket?.classList.toggle('basket_dark', isBlack);
-    modal?.classList.toggle('modal_dark', isBlack);
+    document.querySelectorAll('.modal_window').forEach(el => el.classList.toggle('modal_dark', isBlack));
     modal_button?.classList.toggle('close_modal_dark', isBlack);
 
     document.querySelectorAll('.navigation__list-item').forEach(li => 
